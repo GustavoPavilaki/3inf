@@ -17,3 +17,5 @@ model usuario {
   nome    String @db.VarChar(50)
   senha   String @db.VarChar(40)
 }
+
+
