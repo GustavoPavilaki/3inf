@@ -1,4 +1,9 @@
-const user = await prisma.user.create({
+const { PrismaClient } = require('@prisma/client')
+
+const prisma = new PrismaClient()
+
+
+const mensagem = await prisma.mensagem.create({
     data: {
       id: '',
       remetente: '',
